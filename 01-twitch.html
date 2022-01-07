@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+            display: flex;
+            /* flex-wrap: wrap; */
+            /* flex-direction: column; */
+        }
+        .navbar{
+            width: 100%;
+            height: 50px;
+            position: fixed;
+            background-color: white;
+            border-bottom: solid 1px #808080;
+            z-index: 2;
+            display: flex;
+            justify-content: space-between;
+        }
+        .logo-bar{
+            width: 165px;
+            height: 50px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .logo{
+            width: 30px;
+            height: 30px;
+            background-image: url(./img/twitch.jpg);
+            background-position: center;
+            background-size: 100%;
+        }
+        .browse{
+            width: 50px;
+            font-size: 15px;
+            font-weight: bold;
+        }
+        .more{
+            width: 25px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .search-bar{
+            width: 390px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .input{
+            width: 355px;
+            height: 36px;
+            background-color: #e5e5e5;
+            border-radius: 5px 0 0 5px;
+        }
+        .search-btn{
+            width: 36px;
+            height: 36px;
+            background-image: url(./img/放大鏡.jpg);
+            background-position: center;
+            background-size: 100%;
+            border-radius: 0 5px 5px 0;
+        }
+        .item-bar{
+            width: 200px;
+            height: 50px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .item-bar-btn-1{
+            width: 20px;
+            height: 20px;
+            background-image: url(./img/皇冠.jpg);
+            background-position: center;
+            background-size: 100%;
+        }
+        .item-bar-btn-2{
+            width: 46px;
+            height: 31px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #e2e2e2;
+            font-size: 10px;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+        .item-bar-btn-3{
+            width: 46px;
+            height: 31px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #b641fa;
+            color: white;
+            font-size: 10px;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+        .item-bar-btn-4{
+            width: 20px;
+            height: 20px;
+            background-image: url(./img/個人.jpg);
+            background-position: center;
+            background-size: 95%;
+            margin-right: 10px;
+        }
+        .container{
+            display: flex;
+            width: 100%;
+            height: calc(100vh - 50px);
+            margin-top: 50px;
+        }
+        .sidebar{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: flex-start;
+            width: 50px;
+            height: 100%;
+            position: fixed;
+            z-index: 1;
+            background-color: #efefef;
+        }
+        .avatar{
+            width: 30px;
+            height: 30px;
+            border-radius: 15px;
+            background-color: #e9a5a5;
+            margin-top: 10px;
+        }
+        .content{
+            width: 100%;
+            margin-left: 50px;
+            padding: 40px 30px 0 30px;
+        }
+        .h1{
+            width: 100%;
+            margin-bottom: 10px;
+            font-size: 54px;
+            font-weight: bold;
+        }
+        .p1{
+            width: 100%;
+            margin-bottom: 55px;
+            font-size: 24px;
+            font-weight: bold;
+            color: #686767;
+        }
+        .h2{
+            width: 100%;
+            font-size: 36px;
+            font-weight: bold;
+        }
+        .p2{
+            width: 100%;
+            margin-bottom: 20px;
+            font-size: 20px;
+            color: #5f5e5e;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo-bar">
+            <div class="logo"></div>
+            <div class="browse">瀏覽</div>
+            <div class="more">⋯</div>
+        </div>
+        <div class="search-bar">
+            <div class="input"></div>
+            <div class="search-btn"></div>
+        </div>
+        <div class="item-bar">
+            <div class="item-bar-btn-1"></div>
+            <div class="item-bar-btn-2">登入</div>
+            <div class="item-bar-btn-3">註冊</div>
+            <div class="item-bar-btn-4"></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="sidebar">
+            <div class="avatar avatar1"></div>
+            <div class="avatar avatar2"></div>
+            <div class="avatar avatar3"></div>
+            <div class="avatar avatar4"></div>
+            <div class="avatar avatar5"></div>
+            <div class="avatar avatar6"></div>
+            <div class="avatar avatar7"></div>
+            <div class="avatar avatar8"></div>
+            <div class="avatar avatar9"></div>
+            <div class="avatar avatar10"></div>
+            <div class="avatar avatar11"></div>
+            <div class="avatar avatar12"></div>
+            <div class="avatar avatar13"></div>
+            <div class="avatar avatar14"></div>
+        </div>
+        <div class="content">
+            <div class="h1">電競</div>
+            <div class="p1">即時賽況、賽事精華和您最愛的職業玩家都在這裡</div>
+            <div class="live-1">
+                <div class="card-1"></div>
+            </div>
+            <div class="h2">實況中的對戰</div>
+            <div class="p2">我們認為您會喜歡的最精采 Live 比賽和對戰</div>
+            <div class="live-2">
+                <div class="card-2"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
